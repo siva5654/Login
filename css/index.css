@@ -1,0 +1,427 @@
+body {
+	position: relative;
+	font-family: 'robotoregular', sans-serif;
+	font-size: 14px;
+}
+
+@font-face {
+	font-family: 'robotobold';
+	src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'), url('../fonts/roboto-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotoregular';
+	src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+*,
+:after,
+:before {
+	box-sizing: border-box
+}
+
+*,
+:after,
+:before,
+input[type=checkbox],
+input[type=radio] {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	margin: 0;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+::placeholder {
+	color: #575757;
+}
+
+input[disabled],
+select[disabled] {
+	cursor: not-allowed;
+	background-color: #f2f3f6;
+}
+
+*,
+*:focus {
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+a {
+	color: #272b3f;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:focus,
+a:hover {
+	text-decoration: none
+}
+
+.container {
+	margin: 0 auto;
+	position: relative
+}
+
+@media only screen and (max-width:992px) {
+	.container {
+		padding: 0 12px
+	}
+}
+
+@media(min-width:992px) {
+	.container {
+		width: 970px
+	}
+}
+
+@media only screen and (min-width:1200px) {
+	.container {
+		width: 1096px
+	}
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	border-radius: 20px
+}
+
+::-webkit-scrollbar-button {
+	display: none
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgba(50, 50, 50, 0.05);
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: rgba(50, 50, 50, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #272b3f
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #272b3f
+}
+
+::-webkit-scrollbar-corner {
+	display: none
+}
+
+::-webkit-resizer {
+	display: none
+}
+
+.sc-smooth {
+	transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+}
+
+
+.sc-loginForm {
+	position: relative;
+	font-size: 0px;
+	padding: 36px 0;
+}
+
+.sc-leftNav,
+.sc-rightNav {
+	display: inline-block;
+	font-size: 14px;
+	position: relative;
+	vertical-align: top;
+	width: 50%;
+}
+
+.sc-rightNav {
+	background-image: linear-gradient(146deg, #6bb8ff, #0085ff);
+}
+
+.sc-rightNav:before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 116px;
+	background-image: url(../images/login-top.png);
+	top: 0px;
+	background-size: cover;
+	left: 0;
+	right: 0;
+}
+
+.sc-rightNav>span {
+	padding: 123px 0px 0px;
+	display: block;
+	text-align: center;
+	position: relative;
+}
+
+.sc-rightNav>span>img {
+	width: 100%;
+}
+
+.sc-leftNav {
+	padding: 176px 104px 0 64px;
+	background-color: #fff;
+	margin: 0px auto;
+}
+
+.sc-leftNav>h1 {
+	font-size: 32px;
+	font-weight: 300;
+	margin: 0px auto 58px;
+	color: #575757;
+}
+
+.sc-leftNav>h1>span {
+	font-weight: 500;
+	color: #ff9b21;
+}
+
+.sc-leftNav>p {
+	font-size: 20px;
+	font-weight: 500;
+	color: #575757;
+}
+
+.sc-form {
+	padding: 24px 0;
+}
+
+.sc-formCont {
+	position: relative;
+}
+
+.sc-formCont+.sc-formCont {
+	margin: 24px auto 0;
+}
+
+.sc-formCont>input {
+	width: 100%;
+	
+	height: 45px;
+	padding: 0px 16px;
+	border: solid 1.2px #f0f0f0;
+	background-color: #f6f6f6;
+}
+.sc-submitbutton {
+	text-transform: capitalize!important;
+	border-radius: 2px;
+	font-size: 14px;
+	height: 40px;
+	width: 100%;
+	max-width: 100%;
+	color: #fff!important;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+	line-height: 40px;
+	border: none;
+	text-align: center;
+	border-radius: 1px;
+	border: solid 1px #0085ff;
+	background-color: #0085ff;
+}
+
+.sc-Gbtn {
+	position: relative;
+}
+
+.sc-Gbtn:before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	width: 0%;
+	right: 0px;
+	z-index: -1;
+	top: 0;
+	height: 100%;
+	margin: 0px auto;
+	transition: 0.7s;
+	-moz-transition: 0.7s;
+	-webkit-transition: 0.7s;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sc-Gbtn:hover:before {
+	width: 100%;
+}
+
+.sc-recPaswd {
+	padding: 0px 0px 62px;
+	border-bottom: solid 2px #ebebeb;
+}
+
+.sc-recPaswd>a {
+	font-size: 14px;
+	font-weight: 300;
+	color: #0085ff;
+	cursor: pointer;
+}
+
+.sc-recPaswd>a:hover {
+	text-decoration: underline;
+}
+
+.sc-powedBy {
+	position: relative;
+	text-align: center;
+	padding: 44px 0;
+}
+
+.sc-powedBy>b {
+	font-size: 12px;
+	color: #575757;
+	font-weight: 300;
+}
+
+.sc-powedBy>b,
+.sc-powedBy>span {
+	display: block;
+}
+
+.sc-powedBy>span {
+	margin: 16px auto 0px;
+	cursor: pointer;
+}
+
+.sc-powedBy>span>img {
+	max-width: 150px;
+}
+
+.formError1>input {
+	animation-name: formvalid;
+	animation-duration: 2s;
+	border: 1px solid #cc0c2e;
+}
+
+@keyframes formvalid {
+	0%,
+	to {
+		transform: translateZ(0)
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translate3d(-5px, 0, 0)
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translate3d(5px, 0, 0)
+	}
+}
+
+
+/*.border {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 0%;
+	z-index: 1;
+	max-width: 336px;
+	transition: height 0.5s, width 0.3s 0.3s;
+}
+
+input:focus~.border {
+	width: 100%;
+	height: 100%;
+	border: 1px solid rgba(24, 144, 255, 0.74)!important;
+	box-shadow: 0 0 5px rgba(25, 145, 255, 0.67);
+}*/
+.formError1>.border {
+	display: none;
+}
+.formError1 >.focus-border{
+	display: none;
+}
+.sc-ipanimation~.focus-border:before,
+.sc-ipanimation~.focus-border:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: #3399FF;
+	transition: 0.5s;
+}
+
+.sc-ipanimation~.focus-border:after {
+	top: auto;
+	bottom: 0;
+	right: 0;
+}
+
+.sc-ipanimation~.focus-border i:before,
+.sc-ipanimation~.focus-border i:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 0;
+	background-color: #3399FF;
+	transition: 0.5s;
+}
+
+.sc-ipanimation~.focus-border i:after {
+	left: auto;
+	top: auto;
+	right: 0;
+	bottom: 0;
+}
+
+.sc-ipanimation:focus~.focus-border:before,
+.sc-ipanimation:focus~.focus-border:after {
+	width: 100%;
+	
+	transition: 0.5s;
+	
+}
+
+.sc-ipanimation:focus~.focus-border i:before,
+.sc-ipanimation:focus~.focus-border i:after {
+	height: 100%;
+	transition: 0.5s;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	.sc-leftNav>h1{
+		margin:0px auto 48px;
+	}
+	.sc-leftNav, .sc-rightNav{
+		vertical-align: middle;
+	}
+	.sc-leftNav{
+		padding: 0px 64px 0 36px;
+	}
+}
